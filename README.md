@@ -7,3 +7,6 @@
 5. Given an array of integers that may contain both positive and negative integers, write a python program to find all pairs whose sum is equal to the desired value.
 6. Given an array of n integers where each element represents the maximum length of the jump that can be made forward from that element. This means if array[i] is equal to x, then we can jump any distance y, such that y less than or equal to x. Find the minimum no. of jumps to reach the end of the array starting from the first element. If an element is zero, then you can't move to the next element.
 7. Knapsack Greedy Problem (maximise profits)
+8. Activity Selection Problem
+9. Job Sequencing Problem
+10. A party has been organised on cruise. The party is organised for a limited time(T). The number of guests entering (E[i]) and leaving (L[i]) the party at every hour is represented as elements of the array. The task is to find the maximum number of guests present on the cruise at any given instance within T hours.
