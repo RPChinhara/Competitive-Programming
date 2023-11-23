@@ -24,12 +24,12 @@ def is_circular_linked_list(head):
 # Example Usage:
 # Assume you have a linked list with nodes: 1 -> 2 -> 3 -> 4 -> 5 -> 2 (making it circular)
 # Construct the linked list
-head = ListNode(1)
-head.next = ListNode(2)
-head.next.next = ListNode(3)
-head.next.next.next = ListNode(4)
-head.next.next.next.next = ListNode(5)
-head.next.next.next.next.next = head.next  # Creating a cycle
+head = ListNode(1) # type: ignore
+head.next = ListNode(2) # type: ignore
+head.next.next = ListNode(3) # type: ignore
+head.next.next.next = ListNode(4) # type: ignore
+head.next.next.next.next = ListNode(5) # type: ignore
+head.next.next.next.next.next = head.next  # Creating a cycle   # type: ignore
 
 # Check if the linked list is circular
 result = is_circular_linked_list(head)

@@ -12,6 +12,6 @@ def remove_duplicates(input_str):
     return ''.join(result_str)
 
 # Example Usage:
-input_string = "tryforsuccess"
+input_string = "ababacd"
 result = remove_duplicates(input_string)
 print("String after removing duplicates:", result)

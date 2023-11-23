@@ -15,6 +15,6 @@ def find_duplicate_elements(arr):
     return result if result else [-1]
 
 # Example usage:
-arr = [1, 2, 3, 4, 2, 7, 8, 8, 9, 10]
+arr = [2, 3, 1, 2, 3]
 result = find_duplicate_elements(arr)
 print("Duplicate elements:", result)

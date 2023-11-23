@@ -13,6 +13,6 @@ def max_subarray_sum(arr):
 
     return max_sum
 
-arr = [-2, 1, -3, 4, -1, 2, 1, -5, 4]
+arr = [1, 2, 3, -2, 5]
 result = max_subarray_sum(arr)
 print("Maximum sum of contiguous subarray:", result)

@@ -38,9 +38,9 @@ class Graph:
 g = Graph(5)
 g.add_edge(0, 1)
 g.add_edge(1, 2)
-g.add_edge(2, 0)
-g.add_edge(1, 3)
+g.add_edge(2, 3)
 g.add_edge(3, 4)
+g.add_edge(4, 1)
 
 result = g.contains_cycle()
 print("Does the graph contain a cycle?", result)

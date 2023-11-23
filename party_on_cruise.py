@@ -14,7 +14,7 @@ def max_guests_within_time(T, E, L):
     return max(events)
 
 if __name__=='__main__':
-    T = 4
+    T = 5
     E = [7, 0, 5, 1, 3]
     L = [1, 2, 1, 3, 4]
 

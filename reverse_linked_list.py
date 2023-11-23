@@ -36,10 +36,10 @@ def reverse_linked_list_recursive(head):
 # Assume you have a linked list with nodes: 1 -> 2 -> 3 -> 4 -> 5
 # Construct the linked list
 head = Node(1)
-head.next = Node(2)
-head.next.next = Node(3)
-head.next.next.next = Node(4)
-head.next.next.next.next = Node(5)
+head.next = Node(2) # type: ignore
+head.next.next = Node(3) # type: ignore
+head.next.next.next = Node(4) # type: ignore
+head.next.next.next.next = Node(5) # type: ignore
 
 # Reverse the linked list(Iterative)
 print("Iterative: ")
@@ -51,11 +51,17 @@ while new_head is not None:
     new_head = new_head.next
 
 
+head_recursive = Node(1)
+head_recursive.next = Node(2) # type: ignore
+head_recursive.next.next = Node(3) # type: ignore
+head_recursive.next.next.next = Node(4) # type: ignore
+head_recursive.next.next.next.next = Node(5) # type: ignore
+
 # Reverse the linked list(Recursive)
-print("Recursive: ")
-new_head = reverse_linked_list_recursive(head)
+print("\nRecursive: ")
+new_head_recursive = reverse_linked_list_recursive(head_recursive)
 
 # Print the reversed linked list
-while new_head is not None:
-    print(new_head.data, end=" ")
-    new_head = new_head.next
+while new_head_recursive is not None:
+    print(new_head_recursive.data, end=" ")
+    new_head_recursive = new_head_recursive.next

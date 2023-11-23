@@ -38,10 +38,6 @@ my_queue = Queue()
 for i in range(1, 6):
     my_queue.put(i)
 
-print("Original Queue:")
-while not my_queue.empty():
-    print(my_queue.get(), end=" ")
-
 # Reverse the order of the first K elements
 reverse_k_elements(my_queue, k)
 
